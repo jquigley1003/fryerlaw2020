@@ -1,0 +1,7 @@
+{
+  "name": "fryerLaw2020",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
