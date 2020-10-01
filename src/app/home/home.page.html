@@ -1,8 +1,8 @@
 
 <ion-content [fullscreen]="true">
-  <ion-grid>
+  <ion-grid class="ion-no-padding">
     <ion-row>
-      <ion-col size="12" class="ion-no-padding">
+      <ion-col size="12">
         <!-- Menu overlays the video -->
         <ion-toolbar>
           <ion-buttons slot="end">
@@ -11,8 +11,8 @@
         </ion-toolbar>
         <!-- Use video as main header -->
         <video poster="../../assets/videos/home-poster.jpg" [muted]="'muted'" controls controlslist="nodownload, nofullscreen"
-         width="100%" height="100%" autoplay loop>
-          <source src="https://firebasestorage.googleapis.com/v0/b/fryerlaw2020.appspot.com/o/videos%2FFryer_h264_MASTER.mp4?alt=media&token=ed7490a3-a8d0-4fda-9615-a43e24eb39e7" 
+         width="100%" height="100%" [autoplay]="'autoplay'" loop>
+          <source src="../../assets/videos/Fryer_h264_MASTER.mov" 
           type="video/mp4">
           Sorry, your browser does not support this video. Please update or use different browser.
         </video>
@@ -20,6 +20,20 @@
           <strong>THE FRYER LAW FIRM</strong>
           <p>A Real Estate Closing Practice</p>
         </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center ion-padding welcome-col">
+        <h1>Welcome</h1>
+        <p>The Fryer Law Firm, P.C. is a real estate law firm located in the heart 
+          of Atlanta. Our Mission is to provide a positive closing experience for 
+          the parties who have entrusted their real estate transaction to our care.
+        </p>
+        <p>Although our firm specializes in the intown Atlanta neighborhoods, 
+          we can close your real estate transactions throughout Georgia. To begin, 
+          please call (404) 240-0007 or send your title request to Ron Kite at 
+          rkite@fryerclosings.com.
+        </p>
       </ion-col>
     </ion-row>
     <ion-row>
