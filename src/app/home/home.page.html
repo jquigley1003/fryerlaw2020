@@ -1,20 +1,55 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="ion-no-padding">
+        <!-- Menu overlays the video -->
+        <ion-toolbar>
+          <ion-buttons slot="end">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <!-- Use video as main header -->
+        <video poster="../../assets/videos/home-poster.jpg" [muted]="'muted'" controls controlslist="nodownload, nofullscreen"
+         width="100%" height="100%" autoplay loop>
+          <source src="https://firebasestorage.googleapis.com/v0/b/fryerlaw2020.appspot.com/o/videos%2FFryer_h264_MASTER.mp4?alt=media&token=ed7490a3-a8d0-4fda-9615-a43e24eb39e7" 
+          type="video/mp4">
+          Sorry, your browser does not support this video. Please update or use different browser.
+        </video>
+        <div id="container">
+          <strong>THE FRYER LAW FIRM</strong>
+          <p>A Real Estate Closing Practice</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <img src="../../assets/shapes.svg" >
+      </ion-col>
+      <ion-col size="12">
+        <img src="../../assets/shapes.svg" >
+      </ion-col>
+      <ion-col size="12">
+        <img src="../../assets/shapes.svg" >
+      </ion-col>
+      <ion-col size="12">
+        <img src="../../assets/shapes.svg" >
+      </ion-col>
+      <ion-col size="12">
+        <img src="../../assets/shapes.svg" >
+      </ion-col>
+      <ion-col size="12">
+        <img src="../../assets/shapes.svg" >
+      </ion-col>
+      <ion-col size="12">
+        <img src="../../assets/shapes.svg" >
+      </ion-col>
+      <ion-col size="12">
+        <img src="../../assets/shapes.svg" >
+      </ion-col>
+      <ion-col size="12">
+        <img src="../../assets/shapes.svg" >
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

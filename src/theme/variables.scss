@@ -230,3 +230,19 @@
     --ion-card-background: #1e1e1e;
   }
 }
+
+/** custom fonts **/
+
+@font-face {
+  font-family: 'Cormorant Semi Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../assets/fonts/CormorantSC-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/Georgia-Regular-font.ttf');
+}
