@@ -3,7 +3,11 @@ ion-toolbar {
   --background: transparent;
 }
 
-.myVideo {
+ion-card {
+  background-color:#cebfa8;
+}
+
+.my-video {
   width: 100%;
 }
 
@@ -36,5 +40,14 @@ ion-toolbar {
   background-image: url(../../assets/atlanta-skyline-beige.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  color: #fff;
+}
+
+.welcome-col h1{
+  font-size: 3vh;
+  font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
+  color: #2c330d;
+}
+
+.welcome-col p {
+  color: #2c330d;
 }
