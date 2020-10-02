@@ -4,8 +4,8 @@
     <ion-content>
       <ion-list id="inbox-list">
         <ion-list-header>Menu</ion-list-header>
-        <ion-icon slot="start" name="call"></ion-icon><ion-note>
-           404-240-0007
+        <ion-note>
+           404-240-0007<br>(draft only - all link to home page)
           </ion-note>
         <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
           <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false">

@@ -16,6 +16,31 @@ export class AppComponent {
       url: '/home',
       icon: 'heart'
     },
+    {
+      title: 'Purchasers & Borrowers',
+      url: '/home',
+      icon: 'home'
+    },
+    {
+      title: 'Sellers',
+      url: '/home',
+      icon: 'cash'
+    },
+    {
+      title: 'Education Center',
+      url: '/home',
+      icon: 'school'
+    },
+    {
+      title: 'Staff',
+      url: '/home',
+      icon: 'people'
+    },
+    {
+      title: 'Contact',
+      url: '/home',
+      icon: 'phone-portrait'
+    },
   ];
 
   constructor(

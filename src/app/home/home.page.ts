@@ -14,7 +14,7 @@ export class HomePage {
     await this.myVideo.nativeElement.load();
     console.log('video ended!')
     this.myVideo.nativeElement.pause();
-    this.myVideo.nativeElement.removeAttribute("controls");
+    // this.myVideo.nativeElement.removeAttribute("controls");
   }
   
 }

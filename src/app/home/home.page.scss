@@ -7,6 +7,16 @@ ion-card {
   background-color:#cebfa8;
 }
 
+ion-menu-button {
+  color: white;
+}
+
+.logo-bld {
+  display: block;
+  margin: auto;
+  
+}
+
 .my-video {
   width: 100%;
 }
@@ -16,18 +26,20 @@ ion-card {
   position: absolute;
   left: 0;
   right: 0;
-  top: 70%;
+  top: 15%;
 }
 
 #container strong {
   font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
-  font-size: 3.5vh;
+  // font-size: 3.5vh;
+  font-size: 4vh;
   color: #fff;
 }
 
 #container p {
   font-family: 'Georgia', 'Times New Roman', Times, serif;
-  font-size: 2.5vh;
+  font-size: 3vh;
+  // font-size: 2.5vh;
   color: #fff;
   margin: 0;
 }
@@ -50,4 +62,20 @@ ion-card {
 
 .welcome-col p {
   color: #2c330d;
+}
+
+.history-col {
+  background-image: url(../../assets/fryerbuilding-ltblue.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.history-col h1{
+  font-size: 3vh;
+  font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
+  color: #fff;
+}
+
+.history-col p {
+  color: #fff;
 }

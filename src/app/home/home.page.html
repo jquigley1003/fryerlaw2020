@@ -9,15 +9,14 @@
             <ion-menu-button></ion-menu-button>
           </ion-buttons>
         </ion-toolbar>
-        <!-- Use video as main header -->
-        <video class="my-video" #myVideo (ended)="videoEnd()" poster="../../assets/videos/home-poster.jpg" 
-        [muted]="'muted'" controls controlslist="nodownload, nofullscreen"
-         width="100%" height="100%" [autoplay]="'autoplay'">
-          <source src="../../assets/videos/Fryer_h264_MASTER.mov" 
-          type="video/mp4">
-          Sorry, your browser does not support this video. Please update or use different browser.
-        </video>
+        <!-- Use video as main header, but use pic for now -->
+        <img src="../../assets/drone-pic-bldg.jpg">
         <div id="container">
+          <ion-row>
+            <ion-col size="4" offset="4">
+              <img class="logo-bld" src="../../assets/logo-bldg.png">
+            </ion-col>
+          </ion-row>
           <strong>THE FRYER LAW FIRM</strong>
           <p>A Real Estate Closing Practice</p>
         </div>
@@ -37,31 +36,67 @@
         </p>
       </ion-col>
     </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <video class="my-video" #myVideo (ended)="videoEnd()" poster="../../assets/videos/home-poster.jpg" 
+        [muted]="'muted'" controls controlslist="nodownload, nofullscreen"
+         width="100%" height="100%">
+          <source src="../../assets/videos/Fryer_h264_MASTER.mov" 
+          type="video/mp4">
+          Sorry, your browser does not support this video. Please update or use different browser.
+        </video>
+      </ion-col>
+    </ion-row>
     <ion-row class="ion-text-center" style="background-color: #859ba8;">
       <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3">
         <ion-card>
           <img src="../../assets/circle-people-agreement.png" >
-          <ion-title>Lorem Ipsum</ion-title>
+          <ion-header>
+            <ion-card-title>Staff</ion-card-title>
+          </ion-header>    
         </ion-card>
       </ion-col>
       <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3">
         <ion-card>
           <img src="../../assets/circle-dialog-agreement.png" >
-          <ion-title>Lorem Ipsum</ion-title>
+          <ion-header>
+            <ion-card-title>Contact</ion-card-title>
+          </ion-header>    
         </ion-card>
       </ion-col>
       <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3">
         <ion-card>
           <img src="../../assets/circle-legal-agreement.png" >
-          <ion-title>Lorem Ipsum</ion-title>
+          <ion-header>
+            <ion-card-title>Purchasers & Borrowers</ion-card-title>
+          </ion-header>    
         </ion-card>
       </ion-col>
       <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3">
         <ion-card>
           <img src="../../assets/circle-checkmark-agreement.png" >
-          <ion-title>Lorem Ipsum</ion-title>
+          <ion-header>
+            <ion-card-title>Sellers</ion-card-title>
+          </ion-header>    
         </ion-card>
       </ion-col>
     </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center ion-no-margin ion-padding history-col">
+        <h1>History</h1>
+        <p>The Fryer Law Firm was founded in 1997 by Clara Fryer to serve exclusively as a real estate closing practice for metro-Atlanta neighborhoods. The attorneys and staff bring together decades of closing experience, including expertise in the areas of condominium/covenant law, builder/new construction issues, lender representation, and title examination work.
+        </p>
+        <p>In 1999, the Firm renovated the former Buckhead Bed and Breakfast building located in the Lenox Pointe development. Lenox Pointe is immediately accessible from I-85/75, GA-400 and major in-town surface streets and is the firm's main office. A state-of-the-art closing facility with conference rooms of varying sizes, the main location also serves as “back office” for the firm's satellite closing sites located in agents' real estate offices in Atlanta and Decatur.
+        </p>
+      </ion-col>
+    </ion-row>
   </ion-grid>
+  <ion-footer class="ion-text-center">
+    <ion-toolbar>
+      <ion-title>The Fryer Law Firm © 2020</ion-title>
+      <address>
+        70 Lenox Pointe NE<br>Atlanta, GA 30324
+      </address>
+    </ion-toolbar>
+  </ion-footer>
 </ion-content>
