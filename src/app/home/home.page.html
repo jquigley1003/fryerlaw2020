@@ -3,23 +3,43 @@
   <ion-grid class="ion-no-padding">
     <ion-row>
       <ion-col size="12" class="ion-no-padding">
-        <!-- Menu overlays the video -->
+        <!-- Menu overlays the slider -->
         <ion-toolbar>
           <ion-buttons slot="end">
             <ion-menu-button></ion-menu-button>
           </ion-buttons>
         </ion-toolbar>
-        <!-- Use video as main header, but use pic for now -->
-        <img src="../../assets/drone-pic-bldg.jpg">
-        <div id="container">
-          <ion-row>
-            <ion-col size="4" offset="4">
-              <img class="logo-bld" src="../../assets/logo-bldg.png">
-            </ion-col>
-          </ion-row>
-          <strong>THE FRYER LAW FIRM</strong>
-          <p>A Real Estate Closing Practice</p>
-        </div>
+        
+        <div class="intro-container">
+          <div class="intro-text-container">
+            <ion-row>
+              <!-- <ion-col size="6" class="ion-text-right">
+                <img class="logo-bld" src="../../assets/logo-bldg.png">
+              </ion-col> -->
+              <ion-col class="ion-text-center">
+                <p #homeTitle><strong>THE FRYER LAW FIRM</strong></p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <p #homeSubtitle class="home-subtitle">A Real Estate Closing Practice</p>
+              </ion-col>
+            </ion-row>
+          </div>
+          <div class="slider-container">
+            <ion-slides [options]="slideOpts" pager="true">
+              <ion-slide>
+                <img src="../../assets/AtlantaMidtown3.jpg" >
+              </ion-slide>
+              <ion-slide>
+                <img src="../../assets/drone-pic-bldg2.jpg" >
+              </ion-slide>
+              <ion-slide>
+                <img src="../../assets/AtlantaSkyline4.jpg" >
+              </ion-slide>
+            </ion-slides>
+          </div>
+        </div>   
       </ion-col>
     </ion-row>
     <ion-row>
@@ -90,13 +110,16 @@
         </p>
       </ion-col>
     </ion-row>
+    <ion-row class="footer-home">
+      <ion-col size="12" class="ion-text-center">
+        <img src="../../assets/logo-bldg.png">
+        <h3>THE FRYER LAW FIRM © 2020</h3>
+      </ion-col>
+      <ion-col size="12" class="ion-text-center">
+        <p>
+          70 Lenox Pointe NE<br>Atlanta, GA 30324
+        </p>
+      </ion-col>
+    </ion-row>
   </ion-grid>
-  <ion-footer class="ion-text-center">
-    <ion-toolbar>
-      <ion-title>The Fryer Law Firm © 2020</ion-title>
-      <address>
-        70 Lenox Pointe NE<br>Atlanta, GA 30324
-      </address>
-    </ion-toolbar>
-  </ion-footer>
 </ion-content>

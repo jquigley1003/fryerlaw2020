@@ -11,32 +11,40 @@ ion-menu-button {
   color: white;
 }
 
+.home-subtitle {
+  opacity: 0;
+}
+
 .logo-bld {
-  display: block;
-  margin: auto;
-  
+  display: inline-block;
 }
 
 .my-video {
   width: 100%;
 }
 
-#container {
-  text-align: center;
+.intro-container {
+  position: relative;
+  width: 100%;
+  background: black;
+}
+
+.intro-text-container {
   position: absolute;
   left: 0;
   right: 0;
-  top: 15%;
+  top: 20%;
+  z-index: 10;
 }
 
-#container strong {
+.intro-text-container strong {
   font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
   // font-size: 3.5vh;
   font-size: 4vh;
   color: #fff;
 }
 
-#container p {
+.intro-text-container p {
   font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-size: 3vh;
   // font-size: 2.5vh;
@@ -44,8 +52,12 @@ ion-menu-button {
   margin: 0;
 }
 
-#container a {
+.intro-text-container a {
   text-decoration: none;
+}
+
+.slider-container {
+  z-index: 1;
 }
 
 .welcome-col {
@@ -78,4 +90,12 @@ ion-menu-button {
 
 .history-col p {
   color: #fff;
+}
+
+.footer-home h3 {
+  font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
+}
+
+.footer-home p {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
 }
