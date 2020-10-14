@@ -18,7 +18,7 @@ export class AppComponent {
     },
     {
       title: 'Purchasers & Borrowers',
-      url: '/home',
+      url: '/purchasers-borrowers',
       icon: 'home'
     },
     {

@@ -1,0 +1,90 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-thumbnail class="ion-margin">
+      <img (click)="goHome()" src="../../assets/logo-bldg-sm.png">
+    </ion-thumbnail>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="12" class="ion-no-padding">
+        <div class="intro-container">
+          <div class="intro-text-container">
+            <ion-row>
+              <!-- <ion-col size="6" class="ion-text-right">
+                <img class="logo-bld" src="../../assets/logo-bldg.png">
+              </ion-col> -->
+              <ion-col class="ion-text-center">
+                <p #homeTitle><strong>THE FRYER LAW FIRM</strong></p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <p #homeSubtitle class="home-subtitle">Purchasers &amp; Borrowers</p>
+              </ion-col>
+            </ion-row>
+          </div>
+          <div class="slider-container">
+            <img src="../../assets/drone-pic-bldg2.jpg">
+          </div>
+        </div>   
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-no-margin ion-padding welcome-col">
+        <h1 class="ion-text-center">Purchasers &amp; Borrowers Information</h1>
+        <h3>Funds for Closing</h3>
+        <p>
+          Funds above $5000.00 should be wired in advance of closing. Please telephone our office for wiring instructions.
+        </p>
+        <p>
+          Amounts above $1000 , but below $5000, may be in the form of a bank cashier's check. Checks may be made payable either to the purchaser(s) or The Fryer Law Firm.
+        </p>
+        <p>
+          Please feel free to contact our office for the amount of funds necessary for closing. If figures are not available prior to closing, you may bring funds in accordance with the closing disclosure provided by your loan officer. (A personal check is acceptable for minor monetary differences).
+        </p>
+        <p>
+          <span style="font-weight: bold;">CAUTION</span> - Do not wire any closing funds until you have confirmed the wire instructions with our firm. There have been instances of wire fraud, so please note that our bank is SunTrust Bank, and the name on our account is The Fryer Law Firm IOLTA and that information will not change. You should not wire any funds, if directed to any other bank or any other account name, do not respond and report it immediately to The Fryer Law Firm.
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-no-margin ion-padding history-col">
+        <h3>Homeowners Hazard Insurance</h3>
+        <p>
+          Original policy is required for closing (insurance binders are not acceptable).
+        </p>
+        <p>
+          Dwelling coverage should be for full replacement cost of your home (variations must be approved by your lender).
+        </p>
+        <p>
+          Your agent should fax to The Fryer Law Firm (at 404.848.9595) the declaration page of the policy prior to closing, along with the paid receipt or invoice.
+        </p>
+        <p>
+          Please provide this office with the insurance agent's name and telephone number for our follow up.
+        </p>
+        <p>
+          All borrowers on the loan documents must be the insured parties on the insurance policy.
+        </p>
+        <p>
+          Please contact this office immediately if any changes are made to the policy that affect the premium amount previously provided to us.
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="footer-home">
+      <ion-col size="12" class="ion-text-center">
+        <img src="../../assets/logo-bldg.png">
+        <h3>THE FRYER LAW FIRM © 2020</h3>
+      </ion-col>
+      <ion-col size="12" class="ion-text-center">
+        <p>
+          70 Lenox Pointe NE<br>Atlanta, GA 30324
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

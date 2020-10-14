@@ -1,0 +1,101 @@
+ion-toolbar {
+  position: absolute;
+  --background: transparent;
+}
+
+ion-card {
+  background-color:#cebfa8;
+}
+
+ion-menu-button {
+  color: white;
+}
+
+.home-subtitle {
+  opacity: 1;
+}
+
+.logo-bld {
+  display: inline-block;
+}
+
+.my-video {
+  width: 100%;
+}
+
+.intro-container {
+  position: relative;
+  width: 100%;
+  background: black;
+}
+
+.intro-text-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20%;
+  z-index: 10;
+}
+
+.intro-text-container strong {
+  font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
+  // font-size: 3.5vh;
+  font-size: 4vh;
+  color: #fff;
+}
+
+.intro-text-container p {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-size: 3vh;
+  // font-size: 2.5vh;
+  color: #fff;
+  margin: 0;
+}
+
+.intro-text-container a {
+  text-decoration: none;
+}
+
+.slider-container {
+  z-index: 1;
+}
+
+.welcome-col {
+  background-image: url(../../assets/atlanta-skyline-beige.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.welcome-col h1{
+  font-size: 3vh;
+  font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
+  color: #2c330d;
+}
+
+.welcome-col p {
+  color: #2c330d;
+}
+
+.history-col {
+  background-image: url(../../assets/fryerbuilding-ltblue.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.history-col h1{
+  font-size: 3vh;
+  font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
+  color: #fff;
+}
+
+.history-col p {
+  color: #fff;
+}
+
+.footer-home h3 {
+  font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
+}
+
+.footer-home p {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
