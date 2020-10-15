@@ -1,0 +1,26 @@
+<ion-content class="ion-padding">
+  <ion-toolbar class="ion-padding-none">
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon  size="large" name="close-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <h1 class="ion-text-center">
+    {{ information[0].title }}
+  </h1>
+  <h3 *ngIf="subTitle != ''" class="ion-text-center">{{ subTitle }}</h3>
+  <img src="{{ information[0].image }}">
+  <div>
+    <p *ngFor="let more of moreInfo; let i=index">
+      <strong>{{ i+1 }}</strong>. {{ more.info }}
+    </p>
+  </div>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button size="large" (click)="closeModal()">
+        <ion-icon size="large" name="close-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-content>

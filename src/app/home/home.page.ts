@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AnimationController, Animation } from '@ionic/angular';
 
 @Component({
@@ -78,7 +79,10 @@ export class HomePage {
     }
   }
 
-  constructor(private animationCtrl: AnimationController) {}
+  constructor(
+    private animationCtrl: AnimationController,
+    private router: Router
+    ) {}
 
   async ngAfterViewInit() {
     this.homeTitleAnim = this.animationCtrl.create('myhomeTitleAnim');
@@ -104,6 +108,10 @@ export class HomePage {
     console.log('video ended!')
     this.myVideo.nativeElement.pause();
     // this.myVideo.nativeElement.removeAttribute("controls");
+  }
+
+  goToPurchBorrowers() {
+    this.router.navigate(['/purchasers-borrowers']);
   }
   
 }

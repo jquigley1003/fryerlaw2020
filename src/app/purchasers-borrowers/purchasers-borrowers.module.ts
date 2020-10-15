@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { PurchasersBorrowersPageRoutingModule } from './purchasers-borrowers-routing.module';
 
 import { PurchasersBorrowersPage } from './purchasers-borrowers.page';
+import { SeeInfoModalModule } from '../shared/modals/see-info-modal/see-info-modal.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PurchasersBorrowersPageRoutingModule
+    PurchasersBorrowersPageRoutingModule,
+    SeeInfoModalModule
   ],
   declarations: [PurchasersBorrowersPage]
 })

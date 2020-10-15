@@ -11,7 +11,15 @@ ion-menu-button {
   color: white;
 }
 
-.home-subtitle {
+ion-item ion-button {
+  --background: var(--ion-color-primary);
+  --background-hover: var(--ion-color-dark);
+  --background-hover-opacity: .3;
+  --color: var(--ion-color-tertiary);
+  margin: 0 0 0 1em;
+}
+
+.purchaser-subtitle {
   opacity: 1;
 }
 
@@ -23,28 +31,29 @@ ion-menu-button {
   width: 100%;
 }
 
-.intro-container {
+.purchaser-container {
   position: relative;
   width: 100%;
   background: black;
 }
 
-.intro-text-container {
+.purchaser-text-container {
   position: absolute;
   left: 0;
   right: 0;
-  top: 20%;
+  top: 40%;
   z-index: 10;
 }
 
-.intro-text-container strong {
+.purchaser-text-container strong {
   font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
   // font-size: 3.5vh;
-  font-size: 4vh;
+  font-size: 7vh;
   color: #fff;
+  text-shadow: 5px 5px 5px black;
 }
 
-.intro-text-container p {
+.purchaser-text-container p {
   font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-size: 3vh;
   // font-size: 2.5vh;
@@ -52,7 +61,7 @@ ion-menu-button {
   margin: 0;
 }
 
-.intro-text-container a {
+.purchaser-text-container a {
   text-decoration: none;
 }
 
@@ -60,36 +69,26 @@ ion-menu-button {
   z-index: 1;
 }
 
-.welcome-col {
-  background-image: url(../../assets/atlanta-skyline-beige.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+.purchaser-col {
+  background-color: var(--ion-color-tertiary);
 }
 
-.welcome-col h1{
+.purchaser-col h1{
   font-size: 3vh;
-  font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
   color: #2c330d;
 }
 
-.welcome-col p {
+.purchaser-col h2 {
+  font-size: 2vh;
   color: #2c330d;
 }
 
-.history-col {
-  background-image: url(../../assets/fryerbuilding-ltblue.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+.info-list {
+  background: rgba(225,225,225,0);
 }
 
-.history-col h1{
-  font-size: 3vh;
-  font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
-  color: #fff;
-}
-
-.history-col p {
-  color: #fff;
+.info-item {
+  --background: rgba(225,225,225,.5);
 }
 
 .footer-home h3 {
