@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import { IonRouterOutlet, ModalController } from '@ionic/angular';
+import { AnimationController, Animation, IonRouterOutlet, ModalController } from '@ionic/angular';
 
 import { SeeInfoModalComponent } from '../shared/modals/see-info-modal/see-info-modal.component';
 
@@ -9,7 +9,10 @@ import { SeeInfoModalComponent } from '../shared/modals/see-info-modal/see-info-
   templateUrl: './purchasers-borrowers.page.html',
   styleUrls: ['./purchasers-borrowers.page.scss'],
 })
-export class PurchasersBorrowersPage implements OnInit {
+export class PurchasersBorrowersPage implements OnInit, AfterViewInit {
+  @ViewChild('purchasersTitle') purchasersTitle: ElementRef;
+
+  purchasersTitleAnim: Animation;
 
   fundsList: any[]= [{
     title: 'Funds for Closing',
@@ -119,10 +122,22 @@ export class PurchasersBorrowersPage implements OnInit {
   constructor(
     private router: Router,
     private modalCtrl: ModalController,
-    private routerOutlet: IonRouterOutlet
+    private routerOutlet: IonRouterOutlet,
+    private animationCtrl: AnimationController
     ) { }
 
   ngOnInit() {
+  }
+
+  ngAfterViewInit() {
+    this.purchasersTitleAnim = this.animationCtrl.create('myPurchasersTitleAnim');
+    this.purchasersTitleAnim 
+      .addElement(this.purchasersTitle.nativeElement)
+      .duration(2000)
+      .fromTo('transform', 'scale(0)', 'scale(1)')
+      .fromTo('opacity', '0', '1');
+
+      this.purchasersTitleAnim.play();
   }
 
   async presentSeeInfoModal(info) {

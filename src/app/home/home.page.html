@@ -53,12 +53,16 @@
           please call (404) 240-0007 or send your title request to Ron Kite at 
           rkite@fryerclosings.com.
         </p>
+        <P>Take a look at our video below showing why we pride ourselves as the 
+          caring and competent firm, bringing real value to you, our lawyers, 
+          and our staff.
+        </P>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="12">
         <video class="my-video" #myVideo (ended)="videoEnd()" poster="../../assets/videos/home-poster.jpg" 
-        [muted]="'muted'" controls controlslist="nodownload, nofullscreen"
+         controls controlslist="nodownload, nofullscreen"
          width="100%" height="100%">
           <source src="../../assets/videos/Fryer_h264_MASTER.mov" 
           type="video/mp4">
@@ -67,22 +71,6 @@
       </ion-col>
     </ion-row>
     <ion-row class="ion-text-center" style="background-color: #859ba8;">
-      <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3">
-        <ion-card>
-          <img src="../../assets/circle-people-agreement.png" >
-          <ion-header>
-            <ion-card-title>Staff</ion-card-title>
-          </ion-header>    
-        </ion-card>
-      </ion-col>
-      <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3">
-        <ion-card>
-          <img src="../../assets/circle-dialog-agreement.png" >
-          <ion-header>
-            <ion-card-title>Contact</ion-card-title>
-          </ion-header>    
-        </ion-card>
-      </ion-col>
       <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3">
         <ion-card (click)="goToPurchBorrowers()">
           <img src="../../assets/circle-legal-agreement.png" >
@@ -96,6 +84,22 @@
           <img src="../../assets/circle-checkmark-agreement.png" >
           <ion-header>
             <ion-card-title>Sellers</ion-card-title>
+          </ion-header>    
+        </ion-card>
+      </ion-col>
+      <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3">
+        <ion-card>
+          <img src="../../assets/circle-people-agreement.png" >
+          <ion-header>
+            <ion-card-title>Staff</ion-card-title>
+          </ion-header>    
+        </ion-card>
+      </ion-col>
+      <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3">
+        <ion-card>
+          <img src="../../assets/circle-dialog-agreement.png" >
+          <ion-header>
+            <ion-card-title>Contact</ion-card-title>
           </ion-header>    
         </ion-card>
       </ion-col>
