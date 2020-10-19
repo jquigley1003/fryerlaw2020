@@ -11,9 +11,17 @@ export class HomePage {
   @ViewChild('myVideo') myVideo: ElementRef;
   @ViewChild('homeTitle') homeTitle: ElementRef;
   @ViewChild('homeSubtitle') homeSubtitle: ElementRef;
+  @ViewChild('purchasersCard') purchasersCard: ElementRef;
+  @ViewChild('sellersCard') sellersCard: ElementRef;
+  @ViewChild('staffCard') staffCard: ElementRef;
+  @ViewChild('contactCard') contactCard: ElementRef;
 
   homeTitleAnim: Animation;
   homeSubtitleAnim: Animation;
+  purchasersCardAnim: Animation;
+  sellersCardAnim: Animation;
+  staffCardAnim: Animation;
+  contactCardAnim: Animation;
 
   slideOpts = {
     autoplay: {
@@ -99,6 +107,38 @@ export class HomePage {
       .fromTo('transform', 'translateY(800px)', 'translateY(0px)')
       .fromTo('opacity', '0', '1');
 
+    this.purchasersCardAnim = this.animationCtrl.create('myPurchasersCardAnim');
+    this.purchasersCardAnim 
+      .addElement(this.purchasersCard.nativeElement)
+      .duration(1000)
+      .keyframes([
+        { offset: 0, transform: 'rotateY(180deg)' }
+      ])
+
+    this.sellersCardAnim = this.animationCtrl.create('mysellersCardAnim');
+    this.sellersCardAnim 
+      .addElement(this.sellersCard.nativeElement)
+      .duration(1000)
+      .keyframes([
+        { offset: 0, transform: 'rotateY(180deg)' }
+      ])  
+
+    this.staffCardAnim = this.animationCtrl.create('mystaffCardAnim');
+    this.staffCardAnim 
+      .addElement(this.staffCard.nativeElement)
+      .duration(1000)
+      .keyframes([
+        { offset: 0, transform: 'rotateY(180deg)' }
+      ])  
+    
+    this.contactCardAnim = this.animationCtrl.create('mycontactCardAnim');
+    this.contactCardAnim 
+      .addElement(this.contactCard.nativeElement)
+      .duration(1000)
+      .keyframes([
+        { offset: 0, transform: 'rotateY(180deg)' }
+      ])  
+
     this.homeTitleAnim.play();
     this.homeSubtitleAnim.play();
   }
@@ -110,8 +150,21 @@ export class HomePage {
     // this.myVideo.nativeElement.removeAttribute("controls");
   }
 
-  goToPurchBorrowers() {
+  async goToPurchBorrowers() {
+    await this.purchasersCardAnim.play();
     this.router.navigate(['/purchasers-borrowers']);
+  }
+
+  async goToSellers() {
+    await this.sellersCardAnim.play();
+  }
+
+  async goToStaff() {
+    await this.staffCardAnim.play();
+  }
+
+  async goToContact() {
+    await this.contactCardAnim.play();
   }
   
 }
