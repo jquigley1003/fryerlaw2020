@@ -112,7 +112,8 @@ export class HomePage {
       .addElement(this.purchasersCard.nativeElement)
       .duration(1000)
       .keyframes([
-        { offset: 0, transform: 'rotateY(180deg)' }
+        { offset: 0, transform: 'rotateY(0)' },
+        { offset: 0.5, transform: 'rotateY(90deg)' }
       ])
 
     this.sellersCardAnim = this.animationCtrl.create('mysellersCardAnim');
@@ -120,7 +121,8 @@ export class HomePage {
       .addElement(this.sellersCard.nativeElement)
       .duration(1000)
       .keyframes([
-        { offset: 0, transform: 'rotateY(180deg)' }
+        { offset: 0, transform: 'rotateY(0)' },
+        { offset: 0.5, transform: 'rotateY(90deg)' }
       ])  
 
     this.staffCardAnim = this.animationCtrl.create('mystaffCardAnim');
@@ -128,7 +130,8 @@ export class HomePage {
       .addElement(this.staffCard.nativeElement)
       .duration(1000)
       .keyframes([
-        { offset: 0, transform: 'rotateY(180deg)' }
+        { offset: 0, transform: 'rotateY(0)' },
+        { offset: 0.5, transform: 'rotateY(90deg)' }
       ])  
     
     this.contactCardAnim = this.animationCtrl.create('mycontactCardAnim');
@@ -136,7 +139,8 @@ export class HomePage {
       .addElement(this.contactCard.nativeElement)
       .duration(1000)
       .keyframes([
-        { offset: 0, transform: 'rotateY(180deg)' }
+        { offset: 0, transform: 'rotateY(0)' },
+        { offset: 0.5, transform: 'rotateY(90deg)' }
       ])  
 
     this.homeTitleAnim.play();
