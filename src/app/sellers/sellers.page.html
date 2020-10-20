@@ -12,52 +12,34 @@
   <ion-grid class="ion-no-padding">
     <ion-row>
       <ion-col size="12" class="ion-no-padding">
-        <div class="purchaser-container">
-          <div class="purchaser-text-container">
+        <div class="seller-container">
+          <div class="seller-text-container">
             <ion-row>
-              <!-- <ion-col size="6" class="ion-text-right">
-                <img class="logo-bld" src="../../assets/logo-bldg.png">
-              </ion-col> -->
               <ion-col class="ion-text-center">
-                <p #purchasersTitle class="purchasersTitle"><strong>Purchasers &amp; Borrowers</strong></p>
+                <p #sellersTitle class="sellers-Title"><strong>Sellers</strong></p>
               </ion-col>
             </ion-row>
-            <!-- <ion-row>
-              <ion-col class="ion-text-center">
-                <p #purchaserSubtitle class="purchaser-subtitle"></p>
-              </ion-col>
-            </ion-row> -->
           </div>
           <div class="slider-container">
-            <img src="../../assets/AtlantaMidtownPT1.jpg">
+            <img src="../../assets/AtlantaMidtownPT2.jpg">
           </div>
         </div>   
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col class="ion-no-margin ion-padding purchaser-col">
-        <h1 class="ion-text-center">Purchasers &amp; Borrowers Information</h1>
+      <ion-col class="ion-no-margin ion-padding seller-col">
+        <h1 class="ion-text-center">Sellers Information</h1>
         <ion-row>
           <ion-col size-xl="6" offset-xl="3">
             <ion-list class="info-list">
-              <ion-item (click)="presentSeeInfoModal(fundsList)" 
+              <ion-item (click)="presentSeeInfoModal(payoffList)" 
               class="ion-margin info-item" lines="none">
-                <h2>Funds for Closing</h2>
+                <h2>Mortgage/Lien Payoff Process</h2>
                 <ion-button fill="outline" slot="end">See Info</ion-button>
               </ion-item>
-              <ion-item (click)="presentSeeInfoModal(hazardInsuranceList)" 
+              <ion-item (click)="presentSeeInfoModal(closingList)" 
               class="ion-margin info-item" lines="none">
-                <h2>Homeowners Hazard Insurance</h2>
-                <ion-button fill="outline" slot="end">See Info</ion-button>
-              </ion-item>
-              <ion-item (click)="presentSeeInfoModal(titleInsuranceList)" 
-              class="ion-margin info-item" lines="none">
-                <h2>Owner's Title Insurance</h2>
-                <ion-button fill="outline" slot="end">See Info</ion-button>
-              </ion-item>
-              <ion-item (click)="presentSeeInfoModal(surveysList)" 
-              class="ion-margin info-item" lines="none">
-                <h2>Surveys</h2>
+                <h2>Parties to Closing</h2>
                 <ion-button fill="outline" slot="end">See Info</ion-button>
               </ion-item>
               <ion-item (click)="presentSeeInfoModal(powersOfAttorneyList)" 

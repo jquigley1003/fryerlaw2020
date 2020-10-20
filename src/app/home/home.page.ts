@@ -161,6 +161,7 @@ export class HomePage {
 
   async goToSellers() {
     await this.sellersCardAnim.play();
+    this.router.navigate(['/sellers'])
   }
 
   async goToStaff() {

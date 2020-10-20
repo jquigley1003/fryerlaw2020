@@ -23,7 +23,7 @@ export class AppComponent {
     },
     {
       title: 'Sellers',
-      url: '/home',
+      url: '/sellers',
       icon: 'cash'
     },
     {
