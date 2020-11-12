@@ -1,6 +1,6 @@
 ion-toolbar {
   position: absolute;
-  --background: transparent;
+  --background: rgba(var(--ion-color-light-rgb), 0.7);
 }
 
 ion-card {

@@ -1,6 +1,6 @@
 ion-toolbar {
   position: absolute;
-  --background: transparent;
+  --background: rgba(var(--ion-color-light-rgb), 0.7);
 }
 
 ion-card {
@@ -42,7 +42,6 @@ ion-item ion-button {
   left: 0;
   right: 0;
   top: 40%;
-  z-index: 10;
 }
 
 .purchaser-text-container strong {
