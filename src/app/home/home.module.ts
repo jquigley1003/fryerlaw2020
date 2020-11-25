@@ -6,13 +6,16 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
+import { MyMenubarModule } from '../shared/components/my-menubar/my-menubar.module';
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    MyMenubarModule
   ],
   declarations: [HomePage]
 })

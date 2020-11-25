@@ -1,0 +1,18 @@
+ion-toolbar {
+  position: absolute;
+  --background: rgba(var(--ion-color-light-rgb), 0.7);
+}
+
+ion-menu-button {
+  color: white;
+}
+
+.desktop {
+  .link {
+    --color: var(--ion-color-light);
+  }
+ 
+  .active-link {
+    --color: var(--ion-color-primary);
+  }
+}

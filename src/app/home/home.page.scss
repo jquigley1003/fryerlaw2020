@@ -4,6 +4,7 @@ ion-toolbar {
 }
 
 ion-card {
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
   background-color:#eae4d6;
 }
 
@@ -38,14 +39,16 @@ ion-menu-button {
 }
 
 .intro-text-container strong {
-  font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
+  // font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
   // font-size: 3.5vh;
   font-size: 7vh;
   color: #fff;
 }
 
 .intro-text-container p {
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
+  // font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-size: 3vh;
   // font-size: 2.5vh;
   color: #fff;
@@ -62,14 +65,15 @@ ion-menu-button {
 
 .welcome-col {
   // background-image: url(../../assets/atlanta-skyline-beige.jpg);
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #eae4d6;
 }
 
 .welcome-col h1{
+  // font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
   font-size: 3vh;
-  font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
   color: #2c330d;
 }
 
@@ -78,6 +82,7 @@ ion-menu-button {
 }
 
 .history-col {
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
   background-image: url(../../assets/fryerbuilding-ltblue.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -85,7 +90,7 @@ ion-menu-button {
 
 .history-col h1{
   font-size: 3vh;
-  font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
+  // font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
   color: #fff;
 }
 
@@ -93,10 +98,14 @@ ion-menu-button {
   color: #fff;
 }
 
+.footer-home {
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
+}
+
 .footer-home h3 {
-  font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
+  // font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
 }
 
 .footer-home p {
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  // font-family: 'Georgia', 'Times New Roman', Times, serif;
 }

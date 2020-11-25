@@ -1,0 +1,47 @@
+<ion-toolbar *ngIf="!isDesktop">
+  <img (click)="goHome()" src="../../assets/logos/FryerLawFirm-Logo-2021b.png">
+  <ion-buttons slot="end">
+    <ion-menu-button color="primary"></ion-menu-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<ion-toolbar *ngIf="isDesktop" class="desktop">
+  <ion-row class="ion-align-items-center">
+    <ion-col size="3">
+      <img src="../../assets/logos/FryerLawFirm-Logo-2021b.png" class="logo ion-text-left">
+    </ion-col>
+    <ion-col size="9">
+      <div class="ion-text-center">
+        <ion-button size="small" fill="clear" (click)="goToBuying()" routerDirection="root" routerLinkActive="active-link"
+          class="link">
+          Buying
+        </ion-button>
+        <ion-button size="small" fill="clear" (click)="goToSelling()" routerDirection="root" routerLinkActive="active-link"
+          class="link">
+          Selling
+        </ion-button>
+        <ion-button size="small" fill="clear" routerLink="/tabs/tab3" routerDirection="root" routerLinkActive="active-link"
+          class="link">
+          Refinancing
+        </ion-button>
+        <ion-button size="small" fill="clear" routerLink="/tabs/tab3" routerDirection="root" routerLinkActive="active-link"
+          class="link">
+          About
+        </ion-button>
+        <ion-button size="small" fill="clear" routerLink="/tabs/tab3" routerDirection="root" routerLinkActive="active-link"
+          class="link">
+          Attorneys
+        </ion-button>
+        <ion-button size="small" fill="clear" routerLink="/tabs/tab3" routerDirection="root" routerLinkActive="active-link"
+          class="link">
+          Resources
+        </ion-button>
+        <ion-button size="small" fill="clear" routerLink="/tabs/tab3" routerDirection="root" routerLinkActive="active-link"
+          class="link">
+          Contact
+        </ion-button>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-toolbar>
+
