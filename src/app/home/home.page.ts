@@ -9,7 +9,7 @@ import { AnimationController, Animation } from '@ionic/angular';
 })
 export class HomePage {
   @ViewChild('myVideo') myVideo: ElementRef;
-  @ViewChild('homeTitle') homeTitle: ElementRef;
+  // @ViewChild('homeTitle') homeTitle: ElementRef;
   @ViewChild('homeSubtitle') homeSubtitle: ElementRef;
   @ViewChild('purchasersCard') purchasersCard: ElementRef;
   @ViewChild('sellersCard') sellersCard: ElementRef;
@@ -93,12 +93,12 @@ export class HomePage {
     ) {}
 
   async ngAfterViewInit() {
-    this.homeTitleAnim = this.animationCtrl.create('myhomeTitleAnim');
-    this.homeTitleAnim 
-      .addElement(this.homeTitle.nativeElement)
-      .duration(5000)
-      .fromTo('transform', 'scale(0)', 'scale(1)')
-      .fromTo('opacity', '0', '1');
+    // this.homeTitleAnim = this.animationCtrl.create('myhomeTitleAnim');
+    // this.homeTitleAnim 
+    //   .addElement(this.homeTitle.nativeElement)
+    //   .duration(5000)
+    //   .fromTo('transform', 'scale(0)', 'scale(1)')
+    //   .fromTo('opacity', '0', '1');
 
     this.homeSubtitleAnim = this.animationCtrl.create('myhomeSubtitleAnim');
     this.homeSubtitleAnim 
@@ -143,7 +143,7 @@ export class HomePage {
         { offset: 0.5, transform: 'rotateY(90deg)' }
       ])  
 
-    this.homeTitleAnim.play();
+    // this.homeTitleAnim.play();
     this.homeSubtitleAnim.play();
   }
 

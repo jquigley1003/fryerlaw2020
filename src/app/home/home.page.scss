@@ -25,9 +25,9 @@ ion-menu-button {
 }
 
 .intro-container {
-  position: relative;
+  padding-top: 4em;
   width: 100%;
-  background: black;
+  background: var(--ion-color-primary);
 }
 
 .intro-text-container {
@@ -38,20 +38,20 @@ ion-menu-button {
   z-index: 10;
 }
 
-.intro-text-container strong {
+.intro-container strong {
   font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
   // font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
   // font-size: 3.5vh;
   font-size: 7vh;
-  color: #fff;
+  color: var(--ion-color-medium);
 }
 
-.intro-text-container p {
+.intro-container p {
   font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
   // font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-size: 3vh;
   // font-size: 2.5vh;
-  color: #fff;
+  color: var(--ion-color-medium);
   margin: 0;
 }
 

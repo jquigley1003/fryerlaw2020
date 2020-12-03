@@ -1,15 +1,16 @@
 ion-toolbar {
   position: absolute;
-  --background: rgba(var(--ion-color-light-rgb), 0.7);
+  // --background: rgba(var(--ion-color-light-rgb), 0.7);
+  --background: none;
 }
 
 ion-menu-button {
-  color: white;
+  color: var(--ion-color-medium);
 }
 
 .desktop {
   .link {
-    --color: var(--ion-color-light);
+    --color: var(--ion-color-medium);
   }
  
   .active-link {

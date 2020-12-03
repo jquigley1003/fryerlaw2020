@@ -1,26 +1,28 @@
+<ion-header>
+  <app-my-menubar></app-my-menubar>
+</ion-header>
 <ion-content [fullscreen]="true">
+  
   <ion-grid class="ion-no-padding">
+    <ion-row class="ion-padding intro-container"> 
+      <!-- <ion-col size="12" class="ion-text-center ion-padding-top">
+        <p #homeTitle><strong>THE FRYER LAW FIRM</strong></p>
+      </ion-col> -->
+      <ion-col size="12" class="ion-text-center ion-padding-top">
+        <p #homeSubtitle class="home-subtitle">A Real Estate Closing Practice 
+          Serving Atlanta Since 1997
+        </p>
+      </ion-col>
+    </ion-row>
     <ion-row>
       <ion-col size="12" class="ion-no-padding">
         <!-- Menu overlays the slider -->
-        <app-my-menubar></app-my-menubar>
         
-        <div class="intro-container">
-          <div class="intro-text-container">
-            <ion-row>
-              <!-- <ion-col size="6" class="ion-text-right">
-                <img class="logo-bld" src="../../assets/logo-bldg.png">
-              </ion-col> -->
-              <ion-col class="ion-text-center">
-                <p #homeTitle><strong>THE FRYER LAW FIRM</strong></p>
-              </ion-col>
-            </ion-row>
-            <ion-row>
-              <ion-col class="ion-text-center">
-                <p #homeSubtitle class="home-subtitle">A Real Estate Closing Practice</p>
-              </ion-col>
-            </ion-row>
-          </div>
+        
+        <!-- <div class="intro-container"> -->
+          <!-- <div class="intro-text-container">
+            
+          </div> -->
           <div class="slider-container">
             <ion-slides [options]="slideOpts" pager="true">
               <ion-slide>
@@ -34,7 +36,7 @@
               </ion-slide>
             </ion-slides>
           </div>
-        </div>   
+        <!-- </div>    -->
       </ion-col>
     </ion-row>
     <ion-row>
