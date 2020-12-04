@@ -16,27 +16,37 @@ export class AppComponent {
     {
       title: 'Home',
       url: '/home',
-      icon: 'heart'
-    },
-    {
-      title: 'Purchasers & Borrowers',
-      url: '/purchasers-borrowers',
       icon: 'home'
     },
     {
-      title: 'Sellers',
+      title: 'Buying',
+      url: '/purchasers-borrowers',
+      icon: 'wallet'
+    },
+    {
+      title: 'Selling',
       url: '/sellers',
       icon: 'cash'
     },
     {
-      title: 'Education Center',
+      title: 'Refinancing',
       url: '/home',
-      icon: 'school'
+      icon: 'star'
     },
     {
-      title: 'Staff',
+      title: 'About',
+      url: '/home',
+      icon: 'book'
+    },
+    {
+      title: 'Attorneys',
       url: '/home',
       icon: 'people'
+    },
+    {
+      title: 'Resources',
+      url: '/home',
+      icon: 'school'
     },
     {
       title: 'Contact',
