@@ -1,0 +1,57 @@
+.attorneys-row {
+  padding-top: 5em;
+  background: var(--ion-color-light);
+}
+
+.attorneys-container {
+  position: relative;
+  width: 100%;
+  background: var(--ion-color-light);
+}
+
+.attorneys-text-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+}
+
+.attorneys-text-container strong {
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
+  // font-size: 3.5vh;
+  font-size: 7vh;
+  color: #fff;
+  text-shadow: 5px 5px 5px black;
+}
+
+.attorneys-text-container p {
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
+  font-size: 3vh;
+  // font-size: 2.5vh;
+  color: #fff;
+  margin: 0;
+}
+
+.slider-container {
+  z-index: 1;
+}
+
+.attorneys-list {
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
+  background: var(--ion-color-light);
+  color: var(--ion-color-medium);
+}
+
+.attorneys-list h1{
+  font-size: 3vh;
+}
+
+.attorneys-list h2 {
+  font-size: 2vh;
+}
+
+.footer-home {
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
+  background-color: var(--ion-color-light);
+  color: var(--ion-color-medium);
+}

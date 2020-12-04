@@ -8,6 +8,10 @@ ion-menu-button {
   color: var(--ion-color-medium);
 }
 
+ion-button {
+  --background-hover: var(--ion-color-secondary);
+}
+
 .desktop {
   .link {
     --color: var(--ion-color-medium);

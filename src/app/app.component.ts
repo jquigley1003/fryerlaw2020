@@ -40,7 +40,7 @@ export class AppComponent {
     },
     {
       title: 'Attorneys',
-      url: '/home',
+      url: '/attorneys',
       icon: 'people'
     },
     {

@@ -36,4 +36,8 @@ export class MyMenubarComponent implements OnInit {
   goToSelling() {
     this.router.navigate(['/sellers'])
   }
+
+  goToAttorneys() {
+    this.router.navigate(['/attorneys'])
+  }
 }
