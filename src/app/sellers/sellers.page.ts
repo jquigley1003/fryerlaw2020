@@ -107,7 +107,7 @@ export class SellersPage implements OnInit, AfterViewInit {
       .fromTo('transform', 'scale(0)', 'scale(1)')
       .fromTo('opacity', '0', '1');
 
-      this.sellersTitleAnim.play();
+    this.sellersTitleAnim.play();
   }
 
   async presentSeeInfoModal(info) {

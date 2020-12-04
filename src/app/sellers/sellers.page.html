@@ -1,22 +1,15 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-
-      <img (click)="goHome()" src="../../assets/logos/FryerLawFirm-Logo-2021.png">
-
-    <ion-buttons slot="end">
-      <ion-menu-button color="primary"></ion-menu-button>
-    </ion-buttons>
-  </ion-toolbar>
+<ion-header>
+  <app-my-menubar></app-my-menubar>
 </ion-header>
 <ion-content [fullscreen]="true">
   <ion-grid class="ion-no-padding">
-    <ion-row>
+    <ion-row class="selling-row">
       <ion-col size="12" class="ion-no-padding">
         <div class="seller-container">
           <div class="seller-text-container">
             <ion-row>
               <ion-col class="ion-text-center">
-                <p #sellersTitle class="sellers-Title"><strong>Sellers</strong></p>
+                <p #sellersTitle class="sellers-title"><strong>Sellers</strong></p>
               </ion-col>
             </ion-row>
           </div>

@@ -41,7 +41,7 @@
     </ion-row>
     <ion-row>
       <ion-col class="ion-text-center ion-no-margin ion-padding welcome-col">
-        <h1>Welcome</h1>
+        <!-- <h1>Welcome</h1>
         <p>The Fryer Law Firm, P.C. is a real estate law firm located in the heart 
           of Atlanta. Our Mission is to provide a positive closing experience for 
           the parties who have entrusted their real estate transaction to our care.
@@ -51,55 +51,47 @@
           please call (404) 240-0007 or send your title request to Ron Kite at 
           rkite@fryerclosings.com.
         </p>
-        <P>Take a look at our video below showing why we pride ourselves as the 
+        <p>Take a look at our video below showing why we pride ourselves as the 
           caring and competent firm, bringing real value to you, our lawyers, 
           and our staff.
-        </P>
+        </p> -->
+        <h2>
+          What service can we help you with?
+        </h2>
       </ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col size="12">
-        <video class="my-video" #myVideo (ended)="videoEnd()" poster="../../assets/videos/home-poster.jpg" 
-         controls controlslist="nodownload, nofullscreen"
-         width="100%" height="100%">
-          <source src="../../assets/videos/Fryer_h264_MASTER.mov" 
-          type="video/mp4">
-          Sorry, your browser does not support this video. Please update or use different browser.
-        </video>
-      </ion-col>
-    </ion-row>
-    <ion-row class="ion-text-center" style="background-color: #859ba8;">
-      <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3">
+    <ion-row class="ion-text-center welcome-row">
+      <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="4">
         <div>
           <ion-card (click)="goToPurchBorrowers()">
-            <img #purchasersCard src="../../assets/circle-agreement-purchasers.png" >
+            <img #purchasersCard src="../../assets/oldsite-purchaser1.jpg" >
             <ion-header>
-              <ion-card-title>Purchasers & Borrowers</ion-card-title>
+              <ion-card-title class="ion-padding-top">Buying</ion-card-title>
             </ion-header>    
           </ion-card>
         </div> 
       </ion-col>
-      <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3">
+      <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="4">
         <div>
           <ion-card (click)="goToSellers()">
-            <img #sellersCard src="../../assets/circle-agreement-sellers.png" >
+            <img #sellersCard src="../../assets/oldsite-homepage.jpg" >
             <ion-header>
-              <ion-card-title>Sellers</ion-card-title>
+              <ion-card-title class="ion-padding-top">Selling</ion-card-title>
             </ion-header>    
           </ion-card>
         </div>  
       </ion-col>
-      <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3">
+      <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="4">
         <div>
           <ion-card (click)="goToStaff()">
-            <img #staffCard src="../../assets/circle-agreement-staff.png" >
+            <img #staffCard src="../../assets/oldsite-seller1.jpg" >
             <ion-header>
-              <ion-card-title>Staff</ion-card-title>
+              <ion-card-title class="ion-padding-top">Refinancing</ion-card-title>
             </ion-header>    
           </ion-card>
         </div>
       </ion-col>
-      <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3">
+      <!-- <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3">
         <div>
           <ion-card (click)="goToContact()">
             <img #contactCard src="../../assets/circle-agreement-contact.png" >
@@ -108,10 +100,11 @@
             </ion-header>    
           </ion-card>
         </div>  
-      </ion-col>
+      </ion-col> -->
     </ion-row>
-    <ion-row>
-      <ion-col class="ion-text-center ion-no-margin ion-padding history-col">
+    <ion-row class="history-row">
+      <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="6" 
+      class="ion-text-left ion-no-margin ion-padding ion-align-self-center history-col">
         <h1>History</h1>
         <p>The Fryer Law Firm was founded in 1997 by Clara Fryer to serve exclusively 
           as a real estate closing practice for metro-Atlanta neighborhoods. 
@@ -127,6 +120,21 @@
           “back office” for the firm's satellite closing sites located in agents' 
           real estate offices in Atlanta and Decatur.
         </p>
+      </ion-col>
+      <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="6" 
+      class="history-pic">
+        <img src="../../assets/oldsite-homepage2.jpg">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <video class="my-video" #myVideo (ended)="videoEnd()" poster="../../assets/videos/home-poster.jpg" 
+         controls controlslist="nodownload, nofullscreen"
+         width="100%" height="100%">
+          <source src="../../assets/videos/Fryer_h264_MASTER.mov" 
+          type="video/mp4">
+          Sorry, your browser does not support this video. Please update or use different browser.
+        </video>
       </ion-col>
     </ion-row>
     <ion-row class="footer-home">

@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { PurchasersBorrowersPageRoutingModule } from './purchasers-borrowers-routing.module';
 
 import { PurchasersBorrowersPage } from './purchasers-borrowers.page';
+import { MyMenubarModule } from '../shared/components/my-menubar/my-menubar.module';
 import { SeeInfoModalModule } from '../shared/modals/see-info-modal/see-info-modal.module';
 
 @NgModule({
@@ -15,6 +16,7 @@ import { SeeInfoModalModule } from '../shared/modals/see-info-modal/see-info-mod
     FormsModule,
     IonicModule,
     PurchasersBorrowersPageRoutingModule,
+    MyMenubarModule,
     SeeInfoModalModule
   ],
   declarations: [PurchasersBorrowersPage]

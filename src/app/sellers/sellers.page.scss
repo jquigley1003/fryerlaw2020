@@ -19,6 +19,11 @@ ion-item ion-button {
   margin: 0 0 0 1em;
 }
 
+.selling-row {
+  padding-top: 5em;
+  background: var(--ion-color-primary);
+}
+
 .sellers-subtitle {
   opacity: 1;
 }
@@ -34,7 +39,7 @@ ion-item ion-button {
 .seller-container {
   position: relative;
   width: 100%;
-  background: black;
+  background: var(--ion-color-primary);
 }
 
 .seller-text-container {
@@ -46,7 +51,7 @@ ion-item ion-button {
 }
 
 .seller-text-container strong {
-  font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
   // font-size: 3.5vh;
   font-size: 7vh;
   color: #fff;
@@ -54,7 +59,7 @@ ion-item ion-button {
 }
 
 .seller-text-container p {
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
   font-size: 3vh;
   // font-size: 2.5vh;
   color: #fff;
@@ -70,31 +75,38 @@ ion-item ion-button {
 }
 
 .seller-col {
-  background-color: var(--ion-color-tertiary);
+  background: var(--ion-color-secondary);
 }
 
 .seller-col h1{
   font-size: 3vh;
-  color: #2c330d;
+  color: var(--ion-color-light);
 }
 
 .seller-col h2 {
   font-size: 2vh;
-  color: #2c330d;
+  color: var(--ion-color-light);
 }
 
 .info-list {
-  background: rgba(225,225,225,0);
+  background: rgba(var(--ion-color-secondary-rgb), 0);
 }
 
 .info-item {
-  --background: rgba(225,225,225,.5);
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
+  --background: rgba(var(--ion-color-secondary-rgb), .5);;
 }
 
-.footer-home h3 {
-  font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
+.footer-home {
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
+  background-color: var(--ion-color-primary);
+  color: var(--ion-color-medium);
 }
 
-.footer-home p {
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
-}
+// .footer-home h3 {
+//   font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
+// }
+
+// .footer-home p {
+//   font-family: 'Georgia', 'Times New Roman', Times, serif;
+// }

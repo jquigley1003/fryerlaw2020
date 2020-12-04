@@ -1,16 +1,9 @@
 <ion-header>
-  <ion-toolbar>
-
-      <img (click)="goHome()" src="../../assets/logos/FryerLawFirm-Logo-2021.png">
-
-    <ion-buttons slot="end">
-      <ion-menu-button color="primary"></ion-menu-button>
-    </ion-buttons>
-  </ion-toolbar>
+  <app-my-menubar></app-my-menubar>
 </ion-header>
 <ion-content [fullscreen]="true">
   <ion-grid class="ion-no-padding">
-    <ion-row>
+    <ion-row class="buying-row">
       <ion-col size="12" class="ion-no-padding">
         <div class="purchaser-container">
           <div class="purchaser-text-container">
@@ -19,7 +12,7 @@
                 <img class="logo-bld" src="../../assets/logo-bldg.png">
               </ion-col> -->
               <ion-col class="ion-text-center">
-                <p #purchasersTitle class="purchasersTitle"><strong>Purchasers &amp; Borrowers</strong></p>
+                <p #purchasersTitle class="purchasers-title"><strong>Purchasers &amp; Borrowers</strong></p>
               </ion-col>
             </ion-row>
             <!-- <ion-row>

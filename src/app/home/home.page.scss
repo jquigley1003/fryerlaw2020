@@ -5,11 +5,20 @@ ion-toolbar {
 
 ion-card {
   font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
-  background-color:#eae4d6;
+  --background: var(--ion-color-primary);
+  --color: white;
+}
+
+ion-card:hover {
+  --background: var(--ion-color-secondary);
+}
+
+ion-card-title {
+  height: 3em;
 }
 
 ion-menu-button {
-  color: white;
+  color: var(--ion-color-secondary);
 }
 
 .home-subtitle {
@@ -63,12 +72,18 @@ ion-menu-button {
   z-index: 1;
 }
 
+.welcome-row {
+  padding: 0 3em;
+  background-color: var(--ion-color-primary);
+}
+
 .welcome-col {
   // background-image: url(../../assets/atlanta-skyline-beige.jpg);
   font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #eae4d6;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  background-color: var(--ion-color-primary);
+  color: var(--ion-color-medium);
 }
 
 .welcome-col h1{
@@ -81,29 +96,38 @@ ion-menu-button {
   color: #2c330d;
 }
 
+.history-row {
+  background: var(--ion-color-secondary)
+}
+
 .history-col {
   font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
-  background-image: url(../../assets/fryerbuilding-ltblue.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: var(--ion-color-secondary)
 }
 
 .history-col h1{
   font-size: 3vh;
   // font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
-  color: #fff;
+  color: var(--ion-color-light);
 }
 
 .history-col p {
-  color: #fff;
+  color: var(--ion-color-light);
+}
+
+.history-pic {
+  padding: 3em 3em;
 }
 
 .footer-home {
   font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
+  background-color: var(--ion-color-primary);
+  color: var(--ion-color-medium);
 }
 
 .footer-home h3 {
   // font-family: 'Cormorant-Semi-Bold', 'Times New Roman', Times, serif;
+
 }
 
 .footer-home p {

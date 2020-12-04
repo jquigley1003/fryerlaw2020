@@ -137,7 +137,7 @@ export class PurchasersBorrowersPage implements OnInit, AfterViewInit {
       .fromTo('transform', 'scale(0)', 'scale(1)')
       .fromTo('opacity', '0', '1');
 
-      this.purchasersTitleAnim.play();
+    this.purchasersTitleAnim.play();
   }
 
   async presentSeeInfoModal(info) {

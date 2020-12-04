@@ -14,7 +14,7 @@ export class HomePage {
   @ViewChild('purchasersCard') purchasersCard: ElementRef;
   @ViewChild('sellersCard') sellersCard: ElementRef;
   @ViewChild('staffCard') staffCard: ElementRef;
-  @ViewChild('contactCard') contactCard: ElementRef;
+  // @ViewChild('contactCard') contactCard: ElementRef;
 
   homeTitleAnim: Animation;
   homeSubtitleAnim: Animation;
@@ -103,9 +103,11 @@ export class HomePage {
     this.homeSubtitleAnim = this.animationCtrl.create('myhomeSubtitleAnim');
     this.homeSubtitleAnim 
       .addElement(this.homeSubtitle.nativeElement)
-      .duration(5000)
-      .fromTo('transform', 'translateY(800px)', 'translateY(0px)')
+      .duration(3000)
+      .fromTo('transform', 'scale(0)', 'scale(1)')
       .fromTo('opacity', '0', '1');
+      // .fromTo('transform', 'translateY(800px)', 'translateY(0px)')
+      // .fromTo('opacity', '0', '1');
 
     this.purchasersCardAnim = this.animationCtrl.create('myPurchasersCardAnim');
     this.purchasersCardAnim 
@@ -134,14 +136,14 @@ export class HomePage {
         { offset: 0.5, transform: 'rotateY(90deg)' }
       ])  
     
-    this.contactCardAnim = this.animationCtrl.create('mycontactCardAnim');
-    this.contactCardAnim 
-      .addElement(this.contactCard.nativeElement)
-      .duration(1000)
-      .keyframes([
-        { offset: 0, transform: 'rotateY(0)' },
-        { offset: 0.5, transform: 'rotateY(90deg)' }
-      ])  
+    // this.contactCardAnim = this.animationCtrl.create('mycontactCardAnim');
+    // this.contactCardAnim 
+    //   .addElement(this.contactCard.nativeElement)
+    //   .duration(1000)
+    //   .keyframes([
+    //     { offset: 0, transform: 'rotateY(0)' },
+    //     { offset: 0.5, transform: 'rotateY(90deg)' }
+    //   ])  
 
     // this.homeTitleAnim.play();
     this.homeSubtitleAnim.play();
