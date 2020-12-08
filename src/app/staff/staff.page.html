@@ -20,10 +20,12 @@
       </ion-col>
     </ion-row>
     <ion-row class="staff-list">
-      <ion-col size="3" class="ion-no-margin ion-padding">
+      <ion-col size-xs="12" size-sm="3" size-md="3" size-lg="3" size-xl="3" 
+      class="ion-no-margin ion-padding">
         <h1 class="ion-text-center">Attorneys &amp; Staff</h1>
       </ion-col>
-      <ion-col size="8">
+      <ion-col size-xs="12" size-sm="8" size-md="8" size-lg="8" size-xl="8" 
+      class="ion-padding">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nulla magni voluptas a aliquam debitis soluta blanditiis aspernatur corporis sunt beatae, illum molestiae vero. Illum accusantium sit eaque cumque officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, nostrum? Iusto consequuntur adipisci animi provident amet corporis, totam quas nisi accusantium maiores nobis recusandae magni dolorum possimus ullam quam dolorem.
         </p>
         <p>
@@ -34,7 +36,7 @@
         <ion-col *ngFor="let staff of staffProfiles$| async;" 
         size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="2"
         routerLink="/staff/{{staff.id}}">
-          <ion-card>
+          <ion-card class="staff-card">
             <img src={{staff.imgUrl}}>
             <ion-card-header>
               <ion-card-title class="ion-text-center">
