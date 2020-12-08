@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AttorneysPageRoutingModule } from './attorneys-routing.module';
+import { StaffPageRoutingModule } from './staff-routing.module';
 
-import { AttorneysPage } from './attorneys.page';
+import { StaffPage } from './staff.page';
 import { MyMenubarModule } from '../shared/components/my-menubar/my-menubar.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { MyMenubarModule } from '../shared/components/my-menubar/my-menubar.modu
     CommonModule,
     FormsModule,
     IonicModule,
-    AttorneysPageRoutingModule,
+    StaffPageRoutingModule,
     MyMenubarModule
   ],
-  declarations: [AttorneysPage]
+  declarations: [StaffPage]
 })
-export class AttorneysPageModule {}
+export class StaffPageModule {}

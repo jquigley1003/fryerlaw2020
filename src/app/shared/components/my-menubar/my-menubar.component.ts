@@ -38,6 +38,6 @@ export class MyMenubarComponent implements OnInit {
   }
 
   goToAttorneys() {
-    this.router.navigate(['/attorneys'])
+    this.router.navigate(['/staff'])
   }
 }

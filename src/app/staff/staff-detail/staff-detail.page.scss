@@ -1,0 +1,23 @@
+.profile-row {
+  padding-top: 5em;
+}
+
+.profile-img-container {
+  padding-left: 2em;
+}
+
+@media screen and (min-width: 480px) {
+  .profile-img {
+    padding: 2em 5em;
+  }
+}
+
+.profile-title {
+  padding-left: 2em;
+  color: var(--ion-color-medium);
+}
+
+.staff-detail-row {
+  padding: 5em;
+  background: var(--ion-color-light);
+}

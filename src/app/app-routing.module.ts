@@ -20,9 +20,13 @@ const routes: Routes = [
     loadChildren: () => import('./sellers/sellers.module').then( m => m.SellersPageModule)
   },
   {
-    path: 'attorneys',
-    loadChildren: () => import('./attorneys/attorneys.module').then( m => m.AttorneysPageModule)
+    path: 'staff',
+    loadChildren: () => import('./staff/staff.module').then( m => m.StaffPageModule)
   },
+  {
+    path: 'staff/:id',
+    loadChildren: () => import('./staff/staff-detail/staff-detail.module').then( m => m.StaffDetailPageModule)
+  }
 ];
 
 @NgModule({

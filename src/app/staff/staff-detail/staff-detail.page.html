@@ -1,0 +1,43 @@
+<ion-header>
+  <app-my-menubar></app-my-menubar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-grid class="ion-no-padding">
+    <ion-row class="profile-row">
+      <ion-col class="profile-img-container">
+        <div class="profile-img">
+          <img src="{{ profile.imgUrl }}">
+        </div> 
+      </ion-col>
+      <ion-col class="profile-title ion-align-self-center">
+        <h1>{{ profile.profileName }}</h1>
+        <p>{{ profile.profileTitle }}</p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="staff-detail-row">
+    <ion-col size-md="8" offset-md="4" size-lg="8" offset-lg="4" size-xl="8" offset-xl="4">
+      <p><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolor, 
+        est optio qui adipisci blanditiis? Quae neque, ab quidem culpa rem necessitatibus 
+        voluptatibus totam vitae architecto, perspiciatis repellendus nesciunt modi."
+      </i></p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab asperiores eligendi 
+        dicta, iure vitae blanditiis minus consequuntur similique id enim! Voluptates saepe 
+        vitae vel excepturi enim, quos quisquam quidem ab. Lorem ipsum, dolor sit amet 
+        consectetur adipisicing elit. Recusandae odio tenetur tempora delectus possimus 
+        consectetur earum quisquam quam vel doloribus iure quas sed quibusdam, hic eos 
+        vero molestias necessitatibus voluptas.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus nesciunt 
+        nostrum eos impedit minima, cum quia unde facilis eius harum accusantium laudantium 
+        dignissimos voluptatum similique quis ratione assumenda nam. Lorem ipsum dolor sit 
+        amet consectetur, adipisicing elit. Enim dolorem ex provident suscipit magni 
+        perferendis dicta quasi est quibusdam qui! Velit veniam dolorem libero laboriosam, 
+        obcaecati tenetur dignissimos expedita dicta?
+      </p>
+      <ion-button color="medium">Contact</ion-button>
+
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+</ion-content>
