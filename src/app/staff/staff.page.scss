@@ -1,3 +1,11 @@
+ion-card {
+  --color: var(--ion-color-medium);
+}
+
+ion-card-title {
+  color: var(--ion-color-medium);
+}
+
 .staff-row {
   padding-top: 5em;
   background: var(--ion-color-light);
@@ -48,6 +56,10 @@
 
 .staff-list h2 {
   font-size: 2vh;
+}
+
+.img-footer {
+  color: var(--ion-color-medium);
 }
 
 .footer-home {

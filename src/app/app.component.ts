@@ -35,7 +35,7 @@ export class AppComponent {
     },
     {
       title: 'About',
-      url: '/home',
+      url: '/about',
       icon: 'book'
     },
     {

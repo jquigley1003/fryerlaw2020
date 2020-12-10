@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { StaffService } from '../../shared/services/staff.service';
 
 @Component({
@@ -13,6 +13,7 @@ export class StaffDetailPage implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
+    private router: Router,
     private staffService: StaffService
   ) { }
 
@@ -20,6 +21,10 @@ export class StaffDetailPage implements OnInit {
     const staffId = +this.activatedRoute.snapshot.paramMap.get('id');
     this.staffService.getProfile(staffId)
       .subscribe(data => this.profile = data)
+  }
+
+  goToStaff() {
+    this.router.navigate(['/staff'])
   }
 
 }

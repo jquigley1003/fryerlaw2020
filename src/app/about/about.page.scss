@@ -1,0 +1,44 @@
+.slider-container {
+  z-index: 1;
+}
+
+.about-row {
+  padding-top: 5em;
+  background: var(--ion-color-light);
+}
+
+.about-container {
+  position: relative;
+  width: 100%;
+  background: var(--ion-color-light);
+}
+
+.about-text-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+}
+
+.about-text-container strong {
+  // font-size: 3.5vh;
+  font-size: 7vh;
+  color: #fff;
+  text-shadow: 5px 5px 5px black;
+}
+
+.about-text-container p {
+  font-size: 3vh;
+  // font-size: 2.5vh;
+  color: #fff;
+  margin: 0;
+}
+
+.about-info {
+  background: rgba(var(--ion-color-secondary-rgb), 0);
+}
+
+.footer-home {
+  background-color: var(--ion-color-primary);
+  color: var(--ion-color-medium);
+}
