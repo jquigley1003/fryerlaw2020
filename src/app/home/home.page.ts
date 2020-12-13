@@ -1,13 +1,16 @@
+import { getTranslationDeclStmts } from '@angular/compiler/src/render3/view/template';
 import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { setClassMetadata } from '@angular/core/src/r3_symbols';
 import { Router } from '@angular/router';
-import { AnimationController, Animation } from '@ionic/angular';
+import { AnimationController, Animation, IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements AfterViewInit {
+  @ViewChild(IonSlides) slides: IonSlides;
   @ViewChild('myVideo') myVideo: ElementRef;
   // @ViewChild('homeTitle') homeTitle: ElementRef;
   @ViewChild('homeSubtitle') homeSubtitle: ElementRef;
@@ -25,7 +28,7 @@ export class HomePage {
 
   slideOpts = {
     autoplay: {
-      delay: 7000,
+      delay: 5000,
     },
     loop: true,
     on: {
@@ -91,6 +94,15 @@ export class HomePage {
     private animationCtrl: AnimationController,
     private router: Router
     ) {}
+
+  ionViewWillLeave() {
+    this.slides.stopAutoplay();
+  }
+
+  ionViewWillEnter() {
+    this.slides.startAutoplay();
+    this.homeSubtitleAnim.play();
+  }
 
   async ngAfterViewInit() {
     // this.homeTitleAnim = this.animationCtrl.create('myhomeTitleAnim');

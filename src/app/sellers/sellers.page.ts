@@ -121,8 +121,4 @@ export class SellersPage implements OnInit, AfterViewInit {
     });
     return await modal.present();
   }
-
-  goHome() {
-    this.router.navigate(['/']);
-  }
 }
