@@ -30,7 +30,7 @@ export class AppComponent {
     },
     {
       title: 'Refinancing',
-      url: '/home',
+      url: '/refinancing',
       icon: 'star'
     },
     {

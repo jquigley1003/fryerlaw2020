@@ -175,11 +175,12 @@ export class HomePage implements AfterViewInit {
 
   async goToSellers() {
     await this.sellersCardAnim.play();
-    this.router.navigate(['/sellers'])
+    this.router.navigate(['/sellers']);
   }
 
-  async goToStaff() {
+  async goToRefinancing() {
     await this.staffCardAnim.play();
+    this.router.navigate(['/refinancing'])
   }
 
   async goToContact() {

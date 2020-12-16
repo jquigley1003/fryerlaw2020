@@ -34,10 +34,18 @@ export class MyMenubarComponent implements OnInit {
   }
 
   goToSelling() {
-    this.router.navigate(['/sellers'])
+    this.router.navigate(['/sellers']);
+  }
+
+  goToRefinancing() {
+    this.router.navigate(['/refinancing']);
+  }
+
+  goToAbout() {
+    this.router.navigate(['/about']);
   }
 
   goToAttorneys() {
-    this.router.navigate(['/staff'])
+    this.router.navigate(['/staff']);
   }
 }
