@@ -45,12 +45,12 @@ export class AppComponent {
     },
     {
       title: 'Resources',
-      url: '/home',
+      url: '/resources',
       icon: 'school'
     },
     {
       title: 'Contact',
-      url: '/home',
+      url: '/contact',
       icon: 'phone-portrait'
     },
   ];

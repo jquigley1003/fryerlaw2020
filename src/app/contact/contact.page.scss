@@ -1,0 +1,75 @@
+ion-toolbar {
+  position: absolute;
+  --background: rgba(var(--ion-color-light-rgb), 0.7);
+}
+
+.contact-row {
+  padding-top: 5em;
+  background: var(--ion-color-primary);
+}
+
+.contact-subtitle {
+  opacity: 1;
+}
+
+.contact-container {
+  position: relative;
+  width: 100%;
+  background: var(--ion-color-light);
+}
+
+.contact-text-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+}
+
+.contact-text-container strong {
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
+  // font-size: 3.5vh;
+  font-size: 7vh;
+  color: #fff;
+  text-shadow: 5px 5px 5px black;
+}
+
+.contact-text-container p {
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
+  font-size: 3vh;
+  // font-size: 2.5vh;
+  color: #fff;
+  margin: 0;
+}
+
+.contact-text-container a {
+  text-decoration: none;
+}
+
+.slider-container {
+  z-index: 1;
+}
+
+.contact-col {
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
+  background: var(--ion-color-light);
+}
+
+.contact-col h1{
+  font-size: 3vh;
+}
+
+.contact-col h2 {
+  font-size: 2vh;
+}
+
+.fill img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+.footer-home {
+  font-family: 'MuktaMahee Extra Light', Arial, Helvetica, sans-serif;
+  background-color: var(--ion-color-primary);
+  color: var(--ion-color-medium);
+}
