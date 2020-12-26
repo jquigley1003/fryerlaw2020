@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 import { StaffService } from '../../shared/services/staff.service';
 
 @Component({
@@ -14,6 +15,7 @@ export class StaffDetailPage implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router,
+    private navCtrl: NavController,
     private staffService: StaffService
   ) { }
 
@@ -24,7 +26,8 @@ export class StaffDetailPage implements OnInit {
   }
 
   goToStaff() {
-    this.router.navigate(['/staff'])
+    // this.router.navigate(['/staff']);
+    this.navCtrl.navigateBack('/staff');
   }
 
 }

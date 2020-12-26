@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 import { ScreensizeService } from '../../services/screensize.service';
 
@@ -13,6 +14,7 @@ export class MyMenubarComponent implements OnInit {
 
   constructor(
     private router: Router,
+    private navCtrl: NavController,
     private screensizeService: ScreensizeService) {
       this.screensizeService.isDesktopView().subscribe(isDesktop => {
         if(this.isDesktop && !isDesktop) {
@@ -26,34 +28,35 @@ export class MyMenubarComponent implements OnInit {
   ngOnInit() {}
 
   goHome() {
-    this.router.navigate(['/']);
+    // this.router.navigate(['/']);
+    this.navCtrl.navigateBack('/');
   }
 
   goToBuying() {
-    this.router.navigate(['/purchasers-borrowers']);
+    this.navCtrl.navigateForward('/purchasers-borrowers');
   }
 
   goToSelling() {
-    this.router.navigate(['/sellers']);
+    this.navCtrl.navigateForward('/sellers');
   }
 
   goToRefinancing() {
-    this.router.navigate(['/refinancing']);
+    this.navCtrl.navigateForward('/refinancing');
   }
 
   goToAbout() {
-    this.router.navigate(['/about']);
+    this.navCtrl.navigateForward('/about');
   }
 
   goToAttorneys() {
-    this.router.navigate(['/staff']);
+    this.navCtrl.navigateForward('/staff');
   }
 
   goToResources() {
-    this.router.navigate(['/resources']);
+    this.navCtrl.navigateForward('/resources');
   }
 
   goToContact() {
-    this.router.navigate(['/contact']);
+    this.navCtrl.navigateForward('/contact');
   }
 }

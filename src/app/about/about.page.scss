@@ -12,10 +12,27 @@ ion-toolbar {
   opacity: 1;
 }
 
+// .about-container {
+//   position: relative;
+//   width: 100%;
+//   background: var(--ion-color-light);
+// }
+
 .about-container {
-  position: relative;
-  width: 100%;
-  background: var(--ion-color-light);
+  height: 50em;
+  background-image: url(../../assets/AtlantaAbout.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// background-attachment: fixed does not work on mobile ios
+// change to scroll for all mobile devices
+@media only screen and (max-width: 1024px) {
+  .mobile-bg-style-scroll {
+    background-attachment: scroll !important;
+  }
 }
 
 .about-text-container {

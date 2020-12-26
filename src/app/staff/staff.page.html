@@ -35,7 +35,7 @@
       <ion-row class="ion-padding">
         <ion-col *ngFor="let staff of staffProfiles$| async;" 
         size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="2"
-        routerLink="/staff/{{staff.id}}">
+        routerLink="/staff/{{staff.id}}" routerDirection="forward">
           <ion-card class="staff-card">
             <img src={{staff.imgUrl}}>
             <ion-card-header>

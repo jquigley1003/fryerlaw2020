@@ -21,6 +21,10 @@ ion-menu-button {
   color: var(--ion-color-secondary);
 }
 
+ion-content {
+  --background: url(../../assets/AtlantaSkyline1.jpg) center 100%;
+}
+
 .home-subtitle {
   opacity: 1;
   // transform: scale(0);
@@ -95,6 +99,12 @@ ion-menu-button {
 
 .welcome-col p {
   color: #2c330d;
+}
+
+.divider-col {
+  height: 10em;
+  display: block;
+  background: transparent;
 }
 
 .history-row {

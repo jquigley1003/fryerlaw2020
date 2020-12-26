@@ -2,7 +2,7 @@ import { getTranslationDeclStmts } from '@angular/compiler/src/render3/view/temp
 import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import { setClassMetadata } from '@angular/core/src/r3_symbols';
 import { Router } from '@angular/router';
-import { AnimationController, Animation, IonSlides } from '@ionic/angular';
+import { AnimationController, Animation, IonSlides, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -92,7 +92,8 @@ export class HomePage implements AfterViewInit {
 
   constructor(
     private animationCtrl: AnimationController,
-    private router: Router
+    private router: Router,
+    private navCtrl: NavController
     ) {}
 
   ionViewWillLeave() {
@@ -170,17 +171,18 @@ export class HomePage implements AfterViewInit {
 
   async goToPurchBorrowers() {
     await this.purchasersCardAnim.play();
-    this.router.navigate(['/purchasers-borrowers']);
+    // this.router.navigate(['/purchasers-borrowers']);
+    this.navCtrl.navigateForward('/purchasers-borrowers');
   }
 
   async goToSellers() {
     await this.sellersCardAnim.play();
-    this.router.navigate(['/sellers']);
+    this.navCtrl.navigateForward('/sellers');
   }
 
   async goToRefinancing() {
     await this.staffCardAnim.play();
-    this.router.navigate(['/refinancing'])
+    this.navCtrl.navigateForward('/refinancing')
   }
 
   async goToContact() {
