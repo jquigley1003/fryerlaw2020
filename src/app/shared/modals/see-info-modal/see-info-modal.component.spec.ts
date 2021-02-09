@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
 import { SeeInfoModalComponent } from './see-info-modal.component';
@@ -7,7 +7,7 @@ describe('SeeInfoModalComponent', () => {
   let component: SeeInfoModalComponent;
   let fixture: ComponentFixture<SeeInfoModalComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ SeeInfoModalComponent ],
       imports: [IonicModule.forRoot()]
